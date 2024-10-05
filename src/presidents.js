@@ -418,15 +418,52 @@ const presidents = [
 
 
 
-// Iteration 1 | Names of All Presidents - `map()`
-function getNames(presidentsArr) {}
+/* Iteration 1 | Names of All Presidents - `map()`
+
+We will start our practice of JS array methods by working with the map() method.
+
+The map() method creates a new array populated with the results returned from the provided callback function for every element in the array. The callback function should return a value to be included in the new array.
+
+
+Implement the function getNames() that takes the presidents array as an argument. The function should return a new array of strings containing only the names of presidents.
+
+You must use the map() method in your implementation to create the new array.
+
+*/
+
+function getNames(presidentsArr) {
+
+  let presidentsNames = presidentsArr.map((president) => president.name); 
+
+  return presidentsNames; 
+
+}
+
+getNames(presidents); 
 
 
 
+/* Iteration 2 | Democratic Presidents - `filter()`
 
-// Iteration 2 | Democratic Presidents - `filter()`
-function getDemocraticPresidents(presidentsArr) {}
+Next up, we will practice using the filter() method. The filter() method creates a new array containing the elements for which the callback function returns true. In other words, the filter() method creates a new array containing only the elements that pass the test implemented by the callback function.
 
+
+Implement the function getDemocraticPresidents() that takes the presidents array as an argument. The function should use the filter() method to create a new filtered array containing only the presidents who belonged to the Democratic party. The function should then return the new filtered array.
+
+The presidents who belonged to the Democratic party have the party property set to "Democratic".
+
+*/
+
+
+function getDemocraticPresidents(presidentsArr) {
+
+  let democraticPotus = presidentsArr.filter((president) => president.party: "Democratic"); 
+
+  return democraticPotus; 
+
+}
+
+getDemocraticPresidents(presidents);
 
 
 
