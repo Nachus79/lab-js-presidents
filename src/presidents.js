@@ -457,7 +457,7 @@ The presidents who belonged to the Democratic party have the party property set 
 
 function getDemocraticPresidents(presidentsArr) {
 
-  let democraticPotus = presidentsArr.filter((president) => president.party: "Democratic"); 
+  let democraticPotus = presidentsArr.filter((president) => president.party === "Democratic"); 
 
   return democraticPotus; 
 
